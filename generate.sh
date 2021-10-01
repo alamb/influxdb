@@ -14,7 +14,7 @@ function check_changes () {
   fi
 }
 
-check_changes "git is dirty before running generate!"
+#check_changes "git is dirty before running generate!"
 
 go generate ./...
 
