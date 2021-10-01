@@ -6,7 +6,7 @@ go install github.com/benbjohnson/tmpl
 
 
 function check_changes () {
-  changes="$(git status 2>/dev/null)"
+  changes="$(git status -v -v 2>/dev/null)"
   if [ -n "$changes" ] ; then
     echo $1
     echo "$changes"
